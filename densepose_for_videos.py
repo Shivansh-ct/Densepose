@@ -5,10 +5,9 @@ import glob
 import os
 
 list_files = []
-for i in glob.glob('/mnt/scratch1/csy207576/project/Data/dr_vishnu_data/*.MOV'):
+for i in glob.glob('/mnt/scratch1/csy207576/project/Data/*.MOV'):
  list_files.append(i)
 
-#list_files = ['/home/mtech/csy207576/exp/ex0.mp4']
 for dir in list_files:
  print(dir)
  os.system("mkdir /mnt/scratch1/csy207576/project/temp2")
